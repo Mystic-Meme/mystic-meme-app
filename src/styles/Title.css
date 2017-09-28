@@ -1,0 +1,25 @@
+.title {
+	display: absolute;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-card {
+	opacity: 0;
+	color: white;
+}
+
+.story-btn {
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid white;
+	transition: background-color 0.5s;
+	color: white;
+	font-size: 18px;
+}
+
+.story-btn:hover {
+	background-color: #717171;
+}
