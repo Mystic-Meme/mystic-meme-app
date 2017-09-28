@@ -1,5 +1,6 @@
 import React from "react";
+import "../styles/CrystalBallImage.css";
 
 export default function CrystalBallImage() {
-	return <img />;
+	return <img className="crystal-ball-image" src="/img/crystalball.png" />;
 }
