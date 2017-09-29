@@ -1,7 +1,6 @@
 import React from "react";
 import CrystalBallImage from "./CrystalBallImage";
 import CrystalBallButton from "./CrystalBallButton";
-import TableImage from "./TableImage";
 import CrystalBallTextResponse from "./CrystalBallTextResponse";
 
 export default function CrystalBallView() {
@@ -10,7 +9,6 @@ export default function CrystalBallView() {
 			<CrystalBallButton />
 			<CrystalBallButton />
 			<CrystalBallImage />
-			<TableImage />
 			<CrystalBallTextResponse />
 		</div>
 	);

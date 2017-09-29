@@ -1,7 +1,14 @@
+a {
+	padding: 50px;
+}
+
 .crystal-ball-image {
 	position: fixed;
 	right: 48%;
 	width: 10%;
 	top: 50%;
 	z-index: -1;
+}
+h1 {
+	color: white;
 }
