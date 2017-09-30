@@ -16,15 +16,17 @@ export default class Title extends Component {
 		};
 	}
 	_updateStory = () => {
-		console.log("runnnnnning!");
+
 		const num = this.state.storyNo;
 		this.setState({
 			storyNo: num + 1
 		});
-		if (this.state.storyNo >= 1) {
+		if (this.state.storyNo == 2) {
 			document.querySelector(".title").style.display = "none";
 		}
+		console.log(this.state.storyNo);
 	};
+
 	render() {
 		return (
 			<div className="title">

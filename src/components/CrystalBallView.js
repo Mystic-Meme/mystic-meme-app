@@ -6,12 +6,16 @@ import BackgroundImage from "./BackgroundImage";
 
 export default function CrystalBallView() {
 	return (
-		<div className="crystall-ball-view">
-			<BackgroundImage />
+		<div className="crystal-ball-view zoomed-in">
+			<h1>
+				You should know, not all is as it seems ... <br /> Now choose your
+				teller, and recieve you your meme ...
+			</h1>
 			<CrystalBallButton />
 			<CrystalBallButton />
 			<CrystalBallImage />
 			<CrystalBallTextResponse />
+			<BackgroundImage />
 		</div>
 	);
 }
