@@ -1,7 +1,6 @@
 .table-img {
-	position: fixed;
-	right: 35%;
-	height: 50%;
-	top: 73%;
-	z-index: -2;
+  position: fixed;
+  right: 35%;
+  height: 50%;
+  top: 73%;
 }
