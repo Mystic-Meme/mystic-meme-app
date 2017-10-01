@@ -7,7 +7,7 @@ export default function Story(props) {
 			<h1 className="title-card" style={props.style}>
 				{props.stories[props.storyNo]}
 			</h1>
-			<Link to="/crystal">
+			<Link to={ props.storyNo < 1 ? "" : "/crystal" }>
 				<button
 					onClick={props.updateStory}
 					style={props.style}

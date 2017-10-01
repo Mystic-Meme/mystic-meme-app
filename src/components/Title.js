@@ -21,7 +21,7 @@ export default class Title extends Component {
 		this.setState({
 			storyNo: num + 1
 		});
-		if (this.state.storyNo == 2) {
+		if (this.state.storyNo >= 2) {
 			document.querySelector(".title").style.display = "none";
 		}
 		console.log(this.state.storyNo);
