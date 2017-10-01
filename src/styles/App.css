@@ -1,9 +1,6 @@
-.crystal-ball-view {
-  min-height: 100vh;
-  text-align: center;
+.root {
+	height: 100%;
 }
-
-
 /*.zoomed-in {
   transition: 1s;
   transform: scale(2);
