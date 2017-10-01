@@ -4,6 +4,15 @@
   top: 64%;
   left: 45%;
   transform-origin: bottom;
+  width: 150px;
+}
+
+.ball-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 h1 {

@@ -1,6 +1,5 @@
 import React from "react";
 import CrystalBallImage from "./CrystalBallImage";
-import CrystalBallButton from "./CrystalBallButton";
 import CrystalBallTextResponse from "./CrystalBallTextResponse";
 import BackgroundImage from "./BackgroundImage";
 
