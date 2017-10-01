@@ -13,7 +13,7 @@ export default function CrystalBallView() {
 			</h1>
 			<CrystalBallButton />
 			<CrystalBallButton />
-			<CrystalBallImage />
+			<CrystalBallImage  class="CrystalBallImage"/>
 			<CrystalBallTextResponse />
 			<BackgroundImage />
 		</div>

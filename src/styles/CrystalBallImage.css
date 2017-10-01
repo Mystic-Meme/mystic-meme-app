@@ -1,7 +1,9 @@
 .crystal-ball-image {
-  position: relative;
-  width: 150px;
-  top: 300px;
+  position: absolute;
+  width: 130px;
+  top: 64%;
+  left: 45%;
+  transform-origin: bottom;
 }
 
 h1 {
