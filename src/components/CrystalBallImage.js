@@ -45,7 +45,7 @@ export default class CrystalBallImage extends Component {
 			<div className="ball-view">
 				<div className="fortune-tellers">
 					{this.state.fortuneTellers.map(ft => {
-						return <CrystalBallButton />;
+						return <CrystalBallButton name={ft} />;
 					})}
 				</div>
 				<img

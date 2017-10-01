@@ -1,27 +1,35 @@
 import React, { Component } from "react";
 
-import Hand from "./Hand";
 import Head from "./Head";
-import CrystalBall from "./CrystalBall";
+import CrystalBallImage from "./CrystalBallImage";
 import ChatBubble from "./ChatBubble";
+import BackgroundImage from "./BackgroundImage";
+import "../styles/App.css";
 
 export default class FortuneTeller extends Component {
 	constructor() {
 		super();
 		this.state = {
-			questions: [],
-			responses: [],
+			questions: ["How do you plead?", "Can I get you anything?", "Does this turban make me look bald?"],
+			responses: ["How quaint.", "That is frankly implausible.", "None of this is real."],
 			userInput: []
 		};
 	}
 
+	componentDidMount(){
+		// document.querySelector(".zoomed-in").classList.add('zoomed-out');
+		document.querySelector(".fortune-teller-view").classList.remove('zoomed-in');
+		document.querySelector(".fortune-teller-view").classList.add('zoomed-out');
+
+	}
+
 	render() {
 		return (
-			<div className="fortune-teller">
-				<Head />
-				<Hand />
-				<CrystalBall />
+			<div className="fortune-teller-view zoomed-in">
+				<CrystalBallImage />
 				<ChatBubble />
+				<Head />
+				<BackgroundImage />
 			</div>
 		);
 	}
