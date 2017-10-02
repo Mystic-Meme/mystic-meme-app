@@ -5,6 +5,12 @@
   align-items: center;
   min-height: 100vh;
 }*/
+.appear {
+}
+
+.disappear {
+	display: none;
+}
 
 .fortune-teller-cont {
   position: absolute;
@@ -13,26 +19,26 @@
 }
 
 .ld-head {
-  width: 200px;
-  position: relative;
-  left: 48%;
-  top: 56%;
+	width: 200px;
+	position: relative;
+	left: 48%;
+	top: 56%;
 }
 
 .ft-hands {
-  width: 226px;
-  position: relative;
-  left: 42%;
-  top: 56%;
+	width: 226px;
+	position: relative;
+	left: 42%;
+	top: 56%;
 }
 
 @keyframes floater {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(10px);
-  }
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(10px);
+	}
 }
 
 .floater {
