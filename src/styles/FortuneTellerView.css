@@ -6,11 +6,10 @@
   min-height: 100vh;
 }*/
 
-.fortune-teller-cont {}
+.fortune-teller-cont {
+}
 
 .ld-head {
-  width: 200px;
-  position: absolute;
-  left: 42%;
-  top: 16%;
+	width: 200px;
+	position: absolute;
 }
