@@ -3,12 +3,15 @@ import CrystalBallButton from "./CrystalBallButton";
 import "../styles/CrystalBallImage.css";
 
 export default class CrystalBallImage extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			start: true,
 			fadeIn: true,
-			fortuneTellers: ["Larry David", "Zoltar"]
+			fortuneTellers: [
+				<img className="ft-selector-ld" src="/img/ld.png"/>,
+				<img className="ft-selector-zoltar" src="/img/zoltar-image.png"/>
+			]
 		};
 	}
 	_showButtons = () => {
@@ -49,7 +52,7 @@ export default class CrystalBallImage extends Component {
 					})}
 				</div>
 				<img
-					onClick={this._showButtons}
+					onClick={this.state.buttons ? this._showButtons : null}
 					className="crystal-ball-image"
 					src="/img/crystal.png"
 				/>

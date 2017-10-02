@@ -17,16 +17,14 @@ export default class FortuneTeller extends Component {
 	}
 
 	componentDidMount(){
-		// document.querySelector(".zoomed-in").classList.add('zoomed-out');
-		document.querySelector(".fortune-teller-view").classList.remove('zoomed-in');
-		document.querySelector(".fortune-teller-view").classList.add('zoomed-out');
+
 
 	}
 
 	render() {
 		return (
-			<div className="fortune-teller-view zoomed-in">
-				<CrystalBallImage />
+			<div className="fortune-teller-view">
+				<CrystalBallImage buttons={false} />
 				<ChatBubble />
 				<Head />
 				<BackgroundImage />
