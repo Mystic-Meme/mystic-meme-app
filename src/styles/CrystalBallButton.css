@@ -5,13 +5,17 @@
   border: 2px solid white;
   color: white;
   font-size: 18px;
+  margin-left: 101%;
 }
 
 .crystal-ball-btn:hover {
   background-color: #717171;
 }
 
-.fortune-tellers {}
+.fortune-tellers {
+  display: flex;
+  justify-content: space-around;
+}
 
 @keyframes fadeInUp {
   from {

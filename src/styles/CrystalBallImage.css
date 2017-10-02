@@ -1,9 +1,9 @@
 .crystal-ball-image {
 	position: absolute;
-	top: 70%;
-	left: 97%;
 	transform-origin: bottom;
 	width: 150px;
+	bottom: 10px;
+	left: 402px;
 }
 
 .ball-view {
