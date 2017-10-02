@@ -11,7 +11,9 @@
   background-color: #717171;
 }
 
-.fortune-tellers {}
+.fortune-tellers {
+  display: flex;  
+}
 
 @keyframes fadeInUp {
   from {

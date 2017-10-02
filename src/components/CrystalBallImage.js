@@ -44,6 +44,7 @@ export default class CrystalBallImage extends Component {
 	};
 
 	render() {
+		console.log(this.state.buttons)
 		return (
 			<div className="ball-view">
 				<div className="fortune-tellers">
@@ -52,7 +53,7 @@ export default class CrystalBallImage extends Component {
 					})}
 				</div>
 				<img
-					onClick={this.state.buttons ? this._showButtons : null}
+					onClick={this._showButtons}
 					className="crystal-ball-image"
 					src="/img/crystal.png"
 				/>
