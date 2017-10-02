@@ -36,7 +36,7 @@ export default class FortuneTeller extends Component {
 	_updateQuestion = e => {
 		this._updateResponse();
 		this._handleInput(e);
-		if (this.state.currentQuestion < this.state.questions.length) {
+		if (this.state.currentQuestion < this.state.questions.length - 1) {
 			this.setState({
 				currentQuestion: this.state.currentQuestion + 1
 			});
