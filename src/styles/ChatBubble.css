@@ -1,0 +1,18 @@
+.chat-bubble {
+	position: absolute;
+	top: 300px;
+	right: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.chat-bubble h3 {
+	color: white;
+}
+
+.chat-bubble input {
+	width: 200px;
+	font-size: 18px;
+}

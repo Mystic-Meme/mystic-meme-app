@@ -1,28 +1,28 @@
 .crystal-ball-image {
-  position: absolute;
-  top: 70%;
-  left: 97%;
-  transform-origin: bottom;
-  width: 150px;
+	position: absolute;
+	top: 70%;
+	left: 97%;
+	transform-origin: bottom;
+	width: 150px;
 }
 
 .ball-view {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-  position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+	position: absolute;
 }
 
 h1 {
-  color: white;
+	color: white;
 }
 
 .ft-selector-ld {
-  width: 30vh;
+	width: 30vh;
 }
 
 .ft-selector-zoltar {
-  width: 30vh;
+	width: 30vh;
 }
