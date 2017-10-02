@@ -10,24 +10,28 @@ export default class FortuneTeller extends Component {
 	constructor() {
 		super();
 		this.state = {
-			questions: ["How do you plead?", "Can I get you anything?", "Does this turban make me look bald?"],
-			responses: ["How quaint.", "That is frankly implausible.", "None of this is real."],
+			questions: [
+				"How do you plead?",
+				"Can I get you anything?",
+				"Does this turban make me look bald?"
+			],
+			responses: [
+				"How quaint.",
+				"That is frankly implausible.",
+				"None of this is real."
+			],
 			userInput: []
 		};
-	}
-
-	componentDidMount(){
-		// document.querySelector(".zoomed-in").classList.add('zoomed-out');
-		document.querySelector(".fortune-teller-view").classList.remove('zoomed-in');
-		document.querySelector(".fortune-teller-view").classList.add('zoomed-out');
-
 	}
 
 	render() {
 		return (
 			<div className="fortune-teller-view zoomed-in">
 				<CrystalBallImage />
-				<ChatBubble />
+				<ChatBubble
+					questions={this.state.questions}
+					responses={this.state.responses}
+				/>
 				<Head />
 				<BackgroundImage />
 			</div>
