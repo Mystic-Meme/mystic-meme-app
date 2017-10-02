@@ -2,9 +2,6 @@
 	display: inline-block;
 	justify-content: center;
 	background-color: black;
-
-
-
 }
 
 .title-card {
@@ -12,6 +9,8 @@
 	color: white;
 	display: flex;
 	justify-content: center;
+	margin-right: 15%;
+	text-align: center;
 
 }
 
@@ -22,12 +21,9 @@
 	color: white;
 	font-size: 18px;
 	position: absolute;
-  bottom: 50px;
-  width: 100px;
-  height: 100px;
-
-
-
+	bottom: 50px;
+	width: 100px;
+	height: 100px;
 }
 
 .story-btn:hover {

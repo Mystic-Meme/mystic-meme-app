@@ -10,8 +10,8 @@ export default class Title extends Component {
 		this.state = {
 			storyNo: 0,
 			stories: [
-				"The door creaks as you push it in, then step into the dim light of a small cluttered room. The smell reminds you of your grandparents' attic, the smell of things long forgtten, memories that have faded to dust...",
-				"The feelings of doubt you felt prior to stepping in fall away like dead leaves. You find youself believing in something greater for the first time in a while. As you turn the corner, you see..."
+				"The door creaks as you push it in, then step into the dim light of a small cluttered room. The smell reminds you of your grandparents' attic, the smell of things long forgotten, memories that have faded to dust...",
+				"The feelings of doubt you felt prior to stepping in fall away like dead leaves. You find yourself believing in something greater for the first time in a while. As you turn the corner, you see..."
 			]
 		};
 	}
