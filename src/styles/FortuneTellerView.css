@@ -9,7 +9,7 @@
 .fortune-teller-cont {
   position: absolute;
   left: 34%;
-  top: 17%;
+  top: 12%;
 }
 
 .ld-head {
@@ -36,5 +36,5 @@
 }
 
 .floater {
-  animation: 2s ease-in-out 4 alternate floater
+  animation: 2s ease-in-out 2 alternate floater
 }
