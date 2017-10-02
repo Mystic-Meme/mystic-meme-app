@@ -1,21 +1,33 @@
 .title {
-	display: flex;
+	display: inline-block;
 	justify-content: center;
-	align-items: center;
 	background-color: black;
+
+
+
 }
 
 .title-card {
 	opacity: 0;
 	color: white;
+	display: flex;
+	justify-content: center;
+
 }
 
 .story-btn {
 	background-color: rgba(0, 0, 0, 0);
-	border: 2px solid white;
+	border: 3px solid white;
 	transition: background-color 0.5s;
 	color: white;
 	font-size: 18px;
+	position: absolute;
+  bottom: 50px;
+  width: 100px;
+  height: 100px;
+
+
+
 }
 
 .story-btn:hover {
