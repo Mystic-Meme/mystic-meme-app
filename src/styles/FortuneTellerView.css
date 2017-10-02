@@ -10,7 +10,14 @@
 
 .ld-head {
   width: 200px;
-  position: absolute;
+  position: fixed;
   left: 42%;
   top: 16%;
+}
+
+.ft-hands {
+  width: 226px;
+  position: fixed;
+  left: 42%;
+  top: 56%;
 }
