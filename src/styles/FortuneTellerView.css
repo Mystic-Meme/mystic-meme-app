@@ -13,3 +13,10 @@
 	width: 200px;
 	position: absolute;
 }
+
+.ft-hands {
+  width: 226px;
+  position: fixed;
+  left: 42%;
+  top: 56%;
+}
