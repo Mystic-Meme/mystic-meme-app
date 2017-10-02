@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Meme(props) {
-	return <img className="meme" src={props.meme} />;
+	return (
+		<div className="memeCont">
+			<img src={props.meme} className="meme" />
+		</div>
+	);
 }

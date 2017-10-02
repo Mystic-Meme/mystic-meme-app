@@ -72,17 +72,21 @@ export default class FortuneTeller extends Component {
 
 	_fetchMeme = async () => {
 		const url = await getMemes();
+		const meme = document.querySelector(".memeCont")
 		console.log(url);
 		this.setState({
 			currentMeme: url
 		});
+		meme.classList.add("revealBS")
 	};
+
 	_handleDisappearance() {
 		const goAway = document.querySelectorAll(".appear");
 		goAway.forEach(elm => {
 			elm.classList.toggle("disappear");
 		});
 	}
+
 	render() {
 		return (
 			<div className="fortune-teller-view zoomed-in">
