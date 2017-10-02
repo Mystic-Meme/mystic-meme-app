@@ -1,7 +1,13 @@
-.root {
-  height: 100%;
+.App {
+	height: 800px;
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
 }
 
+h1 {
+	position: absolute;
+}
 
 /*
 .zoomed-in {

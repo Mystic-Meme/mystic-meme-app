@@ -5,6 +5,7 @@
 	border: 2px solid white;
 	color: white;
 	font-size: 18px;
+	position: absolute;
 }
 
 .crystal-ball-btn:hover {
