@@ -5,6 +5,7 @@ import CrystalBallImage from "./CrystalBallImage";
 import ChatBubble from "./ChatBubble";
 import BackgroundImage from "./BackgroundImage";
 import ChatResponse from "./ChatResponse";
+import getMemes from "./helpers/Fetch";
 import "../styles/App.css";
 
 export default class FortuneTeller extends Component {
@@ -32,14 +33,33 @@ export default class FortuneTeller extends Component {
 			userInput: []
 		};
 	}
-	_updateQuestion = () => {
-		if (this.state.currentQuestion <= this.state.questions.length) {
+	_updateQuestion = e => {
+		this._updateResponse();
+		this._handleInput(e);
+		if (this.state.currentQuestion < this.state.questions.length) {
 			this.setState({
 				currentQuestion: this.state.currentQuestion + 1
 			});
 		} else {
-			this.props.fetchMeme();
+			this._fetchMeme();
 		}
+	};
+	_updateResponse = () => {
+		console.log("Updating");
+		const randomNo = Math.floor(Math.random() * this.state.responses.length);
+		console.log(randomNo);
+		this.setState({
+			currentResponse: randomNo
+		});
+	};
+
+	_handleInput = e => {
+		e.preventDefault();
+		e.target[0].value = "";
+	};
+
+	_fetchMeme = () => {
+		getMemes();
 	};
 	render() {
 		return (
