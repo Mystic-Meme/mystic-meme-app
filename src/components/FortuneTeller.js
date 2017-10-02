@@ -6,6 +6,7 @@ import ChatBubble from "./ChatBubble";
 import BackgroundImage from "./BackgroundImage";
 import ChatResponse from "./ChatResponse";
 import getMemes from "./helpers/Fetch";
+import Meme from "./Meme";
 import "../styles/App.css";
 
 export default class FortuneTeller extends Component {
@@ -14,6 +15,7 @@ export default class FortuneTeller extends Component {
 		this.state = {
 			currentQuestion: 0,
 			currentInput: "",
+			currentMeme: "",
 			currentResponse: 0,
 			questions: [
 				"What is your middle name?",
@@ -43,6 +45,7 @@ export default class FortuneTeller extends Component {
 				currentQuestion: this.state.currentQuestion + 1
 			});
 		} else {
+			this._handleDisappearance();
 			this._fetchMeme();
 		}
 		head.classList.remove("floater")
@@ -67,9 +70,23 @@ export default class FortuneTeller extends Component {
 		e.target[0].value = "";
 	};
 
-	_fetchMeme = () => {
-		getMemes();
+	_fetchMeme = async () => {
+		const url = await getMemes();
+		const meme = document.querySelector(".memeCont")
+		console.log(url);
+		this.setState({
+			currentMeme: url
+		});
+		meme.classList.add("revealBS")
 	};
+
+	_handleDisappearance() {
+		const goAway = document.querySelectorAll(".appear");
+		goAway.forEach(elm => {
+			elm.classList.toggle("disappear");
+		});
+	}
+
 	render() {
 		return (
 			<div className="fortune-teller-view zoomed-in">
@@ -82,6 +99,7 @@ export default class FortuneTeller extends Component {
 					response={this.state.responses[this.state.currentResponse]}
 				/>
 				<Head />
+				<Meme meme={this.state.currentMeme} />
 				<BackgroundImage />
 			</div>
 		);

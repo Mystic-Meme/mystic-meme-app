@@ -6,6 +6,26 @@
   min-height: 100vh;
 }*/
 
+.appear {}
+
+.disappear {
+  display: none;
+}
+
+.memeCont {
+  position: absolute;
+  width: 1000px;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.meme {
+  max-height: 400px;
+}
+
 .fortune-teller-cont {
   position: absolute;
   left: 34%;
@@ -37,4 +57,19 @@
 
 .floater {
   animation: 2s ease-in-out 2 alternate floater
+}
+
+@keyframes revealBS {
+  from {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-150px);
+    opacity: 1;
+  }
+}
+
+.revealBS {
+  animation: 2s ease-in forwards revealBS
 }

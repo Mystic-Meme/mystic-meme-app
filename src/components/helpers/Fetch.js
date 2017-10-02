@@ -2,14 +2,16 @@ import axios from "axios";
 import API_KEY from "../API_KEY";
 
 export default function getMemes() {
-	axios
-		.get(
-			`https://api.pinterest.com/v1/boards/771804523579678878/pins/?access_token=${API_KEY}&fields=id%2Cimage`
-		)
-		.then(function(response) {
-			console.log(response);
-		})
-		.catch(function(error) {
-			console.log(error);
-		});
+	return new Promise((resolve, reject) => {
+		axios
+			.get(
+				`https://api.pinterest.com/v1/boards/771804523579678878/pins/?access_token=${API_KEY}&fields=id%2Cimage`
+			)
+			.then(res => {
+				const randomNo = Math.floor(Math.random() * 24);
+				const url = res.data.data[randomNo].image.original.url;
+				console.log(url);
+				resolve(url);
+			});
+	});
 }
