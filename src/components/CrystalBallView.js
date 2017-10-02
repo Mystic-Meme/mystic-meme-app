@@ -8,8 +8,8 @@ export default function CrystalBallView() {
 	return (
 		<div className="crystal-ball-view">
 			<h1 className="typewriter">
-				You should know, not all is as it seems ... <br /> Now choose your
-				teller, and receive you your meme ...
+				You should know, not all is as it seems ...<br/>
+				Now choose your teller, and receive you your meme ...
 			</h1>
 			{/* <CrystalBallButton /> */}
 			{/* <CrystalBallButton /> */}

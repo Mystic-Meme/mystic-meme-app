@@ -2,39 +2,29 @@
 	height: 800px;
 	width: 1000px;
 	overflow: hidden;
-	margin: 0 auto;
+  margin: 0 auto;
+  font-family: Germania One;
 }
 
 h1 {
 	position: absolute;
 }
 
-/* testing for typewriter */
-
-/* .typewriter {
-  animation: typewriter 3.5s steps(100) 1s 1 normal both, 
-  blinkTextCursor 500ms steps(100) infinite normal;}
-
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 24em;}
+.typewriter {
+      width: 30em;
+      white-space: nowrap;
+      overflow:hidden;
+      -webkit-animation: type 5s steps(50, end);
+      animation: type 5s steps(50, end);
   }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  } */
 
-/*
-.zoomed-in {
-  transition: 1s;
-  transform-origin: bottom;
-  transform: scale(2) translateY(-50px);
-  position: absolute;
-  top: 20%;
-}
+  @keyframes type{
+      from { width: 0; }
+  }
+  
+  @-webkit-keyframes type{
+      from { width: 0; }
+  }
 
-.zoomed-out {
-  transition: 1s;
-  transform: scale(1) translateY(0);
-}
-*/
+  @import url('https://fonts.googleapis.com/css?family=Germania+One');
+  
