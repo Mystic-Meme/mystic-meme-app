@@ -36,6 +36,8 @@ export default class FortuneTeller extends Component {
 		};
 	}
 	_updateQuestion = e => {
+		const head = document.querySelector(".fortune-teller-cont");
+		const hand = document.querySelector(".ft-hands");
 		this._updateResponse();
 		this._handleInput(e);
 		if (this.state.currentQuestion < this.state.questions.length - 1) {
@@ -46,7 +48,14 @@ export default class FortuneTeller extends Component {
 			this._handleDisappearance();
 			this._fetchMeme();
 		}
+		head.classList.remove("floater")
+		hand.classList.remove("floater")
+		void hand.offsetWidth;
+		void head.offsetWidth;
+		head.classList.add("floater")
+		hand.classList.add("floater")
 	};
+
 	_updateResponse = () => {
 		console.log("Updating");
 		const randomNo = Math.floor(Math.random() * this.state.responses.length);
