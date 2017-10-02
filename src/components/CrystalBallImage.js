@@ -8,7 +8,10 @@ export default class CrystalBallImage extends Component {
 		this.state = {
 			start: true,
 			fadeIn: true,
-			fortuneTellers: ["Larry David", "Zoltar"]
+			fortuneTellers: [
+				<img className="ft-selector-ld" src="/img/ld.png"/>,
+				<img className="ft-selector-zoltar" src="/img/zoltar-image.png"/>
+			]
 		};
 	}
 	_showButtons = () => {
