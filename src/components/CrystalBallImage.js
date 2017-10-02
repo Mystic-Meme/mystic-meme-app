@@ -9,8 +9,8 @@ export default class CrystalBallImage extends Component {
 			start: true,
 			fadeIn: true,
 			fortuneTellers: [
-				<img className="ft-selector-ld" src="/img/ld.png"/>,
-				<img className="ft-selector-zoltar" src="/img/zoltar-image.png"/>
+				<img className="ft-selector-ld" src="/img/ld.png" alt="selector"/>,
+				<img className="ft-selector-zoltar" src="/img/zoltar-image.png" alt="selector"/>
 			]
 		};
 	}
@@ -46,7 +46,7 @@ export default class CrystalBallImage extends Component {
 	render() {
 		return (
 			<div className="ball-view">
-				<div className="fortune-tellers">
+				<div className="fortune">
 					{this.state.fortuneTellers.map(ft => {
 						return <CrystalBallButton key={ft} name={ft} />;
 					})}
@@ -54,7 +54,7 @@ export default class CrystalBallImage extends Component {
 				<img
 					onClick={this.state.buttons ? this._showButtons : null}
 					className="crystal-ball-image"
-					src="/img/crystal.png"
+					src="/img/crystal.png" alt="crystal-ball"
 				/>
 			</div>
 		);

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Motion, spring } from "react-motion";
-import { Route, Switch } from "react-router-dom";
 import Story from "./Story";
 import "../styles/Title.css";
 
