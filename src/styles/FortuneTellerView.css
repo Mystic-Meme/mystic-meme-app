@@ -5,11 +5,25 @@
   align-items: center;
   min-height: 100vh;
 }*/
-.appear {
-}
+
+.appear {}
 
 .disappear {
-	display: none;
+  display: none;
+}
+
+.memeCont {
+  position: absolute;
+  width: 1000px;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.meme {
+  max-height: 400px;
 }
 
 .fortune-teller-cont {
@@ -19,28 +33,43 @@
 }
 
 .ld-head {
-	width: 200px;
-	position: relative;
-	left: 48%;
-	top: 56%;
+  width: 200px;
+  position: relative;
+  left: 48%;
+  top: 56%;
 }
 
 .ft-hands {
-	width: 226px;
-	position: relative;
-	left: 42%;
-	top: 56%;
+  width: 226px;
+  position: relative;
+  left: 42%;
+  top: 56%;
 }
 
 @keyframes floater {
-	from {
-		transform: translateY(0px);
-	}
-	to {
-		transform: translateY(10px);
-	}
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
 .floater {
   animation: 2s ease-in-out 2 alternate floater
+}
+
+@keyframes revealBS {
+  from {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-150px);
+    opacity: 1;
+  }
+}
+
+.revealBS {
+  animation: 2s ease-in forwards revealBS
 }
