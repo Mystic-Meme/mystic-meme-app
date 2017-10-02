@@ -7,16 +7,34 @@
 }*/
 
 .fortune-teller-cont {
+  position: absolute;
+  left: 34%;
+  top: 17%;
 }
 
 .ld-head {
-	width: 200px;
-	position: absolute;
+  width: 200px;
+  position: relative;
+  left: 48%;
+  top: 56%;
 }
 
 .ft-hands {
   width: 226px;
-  position: fixed;
+  position: relative;
   left: 42%;
   top: 56%;
+}
+
+@keyframes floater {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.floater {
+  animation: 2s ease-in-out 4 alternate floater
 }
