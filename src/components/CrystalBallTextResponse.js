@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function CrystalBallTextResponse() {
-	return <h2 />;
+	return <h2> " " </h2>;
 }

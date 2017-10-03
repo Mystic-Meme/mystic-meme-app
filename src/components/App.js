@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Title from "./Title";
 import { Switch, Route } from "react-router-dom";
-import BackgroundImage from "./BackgroundImage";
+
 import CrystalBallView from "./CrystalBallView";
 import FortuneTeller from "./FortuneTeller";
 import "../styles/App.css";
