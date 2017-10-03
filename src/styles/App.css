@@ -18,6 +18,10 @@ h1 {
       animation: type 5s steps(50, end);
   }
 
+.redirect-to-main {
+  font-family: Germania One;  
+}
+
   @keyframes type{
       from { width: 0; }
   }

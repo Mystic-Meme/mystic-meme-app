@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import Head from "./Head";
 import CrystalBallImage from "./CrystalBallImage";
@@ -89,6 +90,10 @@ export default class FortuneTeller extends Component {
 
 	render() {
 		return (
+			<div>
+			<button className="redirect-to-main">
+				<Link to="/">Redirect to story page ... </Link>
+			</button>
 			<div className="fortune-teller-view zoomed-in">
 				<CrystalBallImage />
 				<ChatBubble
@@ -101,6 +106,7 @@ export default class FortuneTeller extends Component {
 				<Head />
 				<Meme meme={this.state.currentMeme} />
 				<BackgroundImage />
+			</div>
 			</div>
 		);
 	}
