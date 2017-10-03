@@ -2,24 +2,36 @@
 	height: 800px;
 	width: 1000px;
 	overflow: hidden;
-	margin: 0 auto;
+  margin: 0 auto;
+  font-family: Germania One;
 }
 
 h1 {
 	position: absolute;
 }
 
-/*
-.zoomed-in {
-  transition: 1s;
-  transform-origin: bottom;
-  transform: scale(2) translateY(-50px);
+.typewriter {
+      width: 30em;
+      white-space: nowrap;
+      overflow:hidden;
+      -webkit-animation: type 5s steps(50, end);
+      animation: type 5s steps(50, end);
+  }
+
+.redirect-to-main {
   position: absolute;
-  top: 20%;
+  font-family: Germania One;  
+  z-index: 1;
+  margin-left: 30%;
 }
 
-.zoomed-out {
-  transition: 1s;
-  transform: scale(1) translateY(0);
-}
-*/
+  @keyframes type{
+      from { width: 0; }
+  }
+  
+  @-webkit-keyframes type{
+      from { width: 0; }
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Germania+One');
+  
