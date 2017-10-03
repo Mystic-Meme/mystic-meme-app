@@ -19,7 +19,9 @@ h1 {
   }
 
 .redirect-to-main {
+  position: absolute;
   font-family: Germania One;  
+  z-index: 1;
 }
 
   @keyframes type{
